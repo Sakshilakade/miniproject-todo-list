@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f4f6f8);
+    /* soft bluish gradient */
+}
+
+/* Container */
+.container {
+    background: white;
+    width: 450px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* Inputs */
+input, select {
+    padding: 10px;
+    margin: 6px;
+    width: 90%;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+}
+
+/* Buttons */
+button {
+    padding: 10px;
+    margin: 6px;
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #1e4ed8, #2563eb);
+}
+
+/* Task cards */
+.task {
+    background: #fafafa;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #ccc;
+    transition: 0.2s;
+}
+
+.task:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Priority */
+.high { border-left-color: #ef4444; }
+.medium { border-left-color: #f59e0b; }
+.low { border-left-color: #10b981; }
+
+/* Overdue */
+.overdue {
+    background: #ffe4e6;
+    border-left-color: #dc2626;
+}
+
+/* Progress */
+.progress-box {
+    width: 100%;
+    height: 18px;
+    background: #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#progressBar {
+    height: 100%;
+    background: linear-gradient(90deg, #2563eb, #60a5fa);
+}
+
+/* Stats highlight */
+#stats {
+    color: #1e3a8a;
+    font-weight: 500;
+}
+
+/* Quote */
+#quote {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+/* Headings */
+h2 {
+    color: #1e3a8a;
+}
